@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Knecht Web Demo</title>
+    <style>
+        body { background: #0d1117; color: #4af626; font-family: monospace; padding: 40px; }
+        canvas#__spider_overlay__ { position: fixed; inset: 0; pointer-events: none; z-index: 9999; }
+        .text-block { font-size: 18px; line-height: 1.6; max-width: 800px; }
+        h1 { color: #8ab8ff; }
+        .hint { color: #666; font-size: 14px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>Knecht Web Demo</h1>
+    <p class="text-block">
+        This is an interactive demonstration of Knecht the spider, who lives right inside your browser.
+        He scans the text on the page and physically scurries across the letters with his legs.
+        Try right-clicking anywhere — the spider will head to that spot.
+        And if you double-click with the left mouse button, he’ll start gathering the letters into a line.
+    </p>
+    <div class="hint">This text is also suitable for a stroll. Try hovering your mouse over the spider.</div>
+    <script src="spider-demo.js"></script>
+</body>
+</html>
