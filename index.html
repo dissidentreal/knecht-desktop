@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0; padding: 0;
+            overflow: hidden;
+            background: transparent !important; /* Критично для прозрачности */
+        }
+        canvas {
+            display: block;
+            width: 100vw; height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="__spider_overlay__"></canvas>
+<!-- Панель управления Кнехтом в правом нижнем углу -->
+<div id="__knecht_settings_panel__">
+    <div class="settings-title">KNECHT CORE</div>
+    
+    <!-- Кнопка звука -->
+    <button id="toggle-mute" class="btn-green">Rustle</button>
+    
+    <!-- Отключение мыслей -->
+    <button id="toggle-thoughts" class="btn-green">Talk</button>
+    
+    <!-- Прозрачность матрицы -->
+    <button id="toggle-matrix" class="btn-green">Matrix</button>
+    
+    <!-- Гуманный выход -->
+    <button id="power-off" class="btn-red">Stop</button>
+</div>
+
+<style>
+/* Главный контейнер панели управления */
+#__knecht_settings_panel__ {
+    position: fixed;
+    /* Убираем bottom и right, позиция будет задаваться через JS */
+    left: 0px; 
+    top: 0px;
+    background: rgba(40, 44, 52, 0.4);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 10px;
+    width: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    z-index: 99999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    user-select: none; /* Запрещаем выделять текст при перетаскивании */
+}
+
+/* Заголовок панели (за него будем таскать) */
+.settings-title {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: grab; /* Курсор в виде руки */
+}
+
+.settings-title:active {
+    cursor: grabbing; /* Курсор-захват, когда тащим */
+}
+
+/* Общие стили для всех кнопок (строго друг под другом) */
+#__knecht_settings_panel__ button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 10px;
+    margin: 4px 0; /* Отступы сверху и снизу выстраивают кнопки в колонку */
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    background: transparent;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Минималистичные серые кнопки */
+.btn-green {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Плавный серый ховер при наведении */
+.btn-green:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Кнопка выключения (чуть отделена, тоже в серых тонах с аккуратным акцентом при наведении) */
+.btn-red {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 10px !important;
+}
+
+.btn-red:hover {
+    background: rgba(235, 87, 87, 0.15); /* Мягкий полупрозрачный красный оттенок */
+    color: #eb5757;
+    border-color: rgba(235, 87, 87, 0.4);
+}
+</style>
+
+
+    <script src="spider.js"></script>
+</body>
+</html>
+
