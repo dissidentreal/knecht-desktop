@@ -4,6 +4,11 @@
 </p>
 
 An interactive desktop spider companion built with Electron that scans your screen for text and physically walks across individual letters using procedural inverse kinematics.
+<p align="center">
+<a href="https://dissidentreal.github.io/knecht-desktop/" target="_blank">
+  <img src="https://img.shields.io/badge/Live_Demo-Play_in_Browser-4af626?style=for-the-badge&logo=github" alt="Live Demo">
+</a>
+</p>
 
 ## Features
 
@@ -57,6 +62,7 @@ An interactive desktop spider companion built with Electron that scans your scre
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
 
 
 
