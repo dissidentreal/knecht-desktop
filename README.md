@@ -39,7 +39,7 @@ An interactive desktop spider companion built with Electron that scans your scre
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/dissidentreal/knecht-desktop.git
    cd knecht-desktop
    ```
 
@@ -62,6 +62,7 @@ An interactive desktop spider companion built with Electron that scans your scre
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
 
 
 
