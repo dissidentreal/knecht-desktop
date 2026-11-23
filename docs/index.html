@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Knecht Web Demo</title>
-    <style>
-        body { background: #0d1117; color: #4af626; font-family: monospace; padding: 40px; }
-        canvas#__spider_overlay__ { position: fixed; inset: 0; pointer-events: none; z-index: 9999; }
-        .text-block { font-size: 18px; line-height: 1.6; max-width: 800px; }
-        h1 { color: #8ab8ff; }
-        .hint { color: #666; font-size: 14px; margin-top: 40px; }
+        <style>
+        /* Темный фон */
+        body { 
+            background: #0d1117; 
+            padding: 40px; 
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace; /* Моноширинный шрифт для хакерской атмосферы */
+        }
+
+        /* Сам Canvas паука */
+        canvas#__spider_overlay__ { 
+            position: fixed; 
+            inset: 0; 
+            pointer-events: none; 
+            z-index: 9999; 
+        }
+
+        /* Заголовок - чуть ярче */
+        h1 { 
+            color: rgba(138, 184, 255, 0.8); /* Приглушенный сине-голубой */
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        /* Текст для прогулок паука - тусклый зеленый */
+        .text-block { 
+            font-size: 13px;         /* Уменьшили размер */
+            line-height: 1.5;        /* Уменьшили межстрочный интервал, чтобы сетка была плотнее */
+            color: rgba(74, 246, 38, 0.25); /* Неоново-зеленый (4af626) с прозрачностью 25% */
+            max-width: 900px; 
+            letter-spacing: 1px;
+        }
+
+        /* Подсказка внизу - серый */
+        .hint { 
+            color: rgba(255, 255, 255, 0.2); 
+            font-size: 11px; 
+            margin-top: 60px; 
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -18,6 +53,20 @@
         He scans the text on the page and physically scurries across the letters with his legs.
         Try right-clicking anywhere — the spider will head to that spot.
         And if you double-click with the left mouse button, he’ll start gathering the letters into a line.
+        "The Glass Bead Game" has a dedication—"To the Pilgrims to the East": the author, as it were, refers the reader to  his previous work and emphasizes their kinship.
+
+
+The name of the protagonist, "Knecht," means "servant"; the heroes of the three inserted novellas—biographies supposedly written by Knecht himself—are variations of the same image in different centuries and different countries, as if emphasizing its "timeless" meaning. They are variations of the same service—"in different garments," with different endings. Continuing the comparison with music, one could say that the basic "motif" is, as it were, "played through" several times in different keys.
+
+
+"The Glass Bead Game" requires attentive, thoughtful reading; much in it is encoded, deeply hidden. In his work the writer turns to the ideas and images of different peoples: the Castalians have absorbed the European Middle Ages with its symbolism; for them ancient China is alive, India with its yogic wisdom; mathematical signs, musical notations, and so on are close to them. The sorting through of the spiritual values accumulated by humanity does not, however, become an end in itself for the author—that senseless and resultless, though virtuosic, Game in Glass Beads requiring colossal preparation and erudition, which the inhabitants of his Castalia engage in. The calm and outwardly detached manner of narration, the ironic tone and Hesse's favorite intonation of the impassive historian conceal a brilliant critical analysis, the writer's ability to discern and record the symptoms of the incurable disease of his era, and at the same time a failure to understand the deep causes of that disease, an inner uncertainty and contradictoriness.
+
+
+The novel consists of three parts, unequal in volume: an introductory treatise—a "popular" sketch of the history of Castalia and the Glass Bead Game; the biography of the protagonist; and Knecht's own works—poems and three prose opuses which in turn have the form of biographies.
+
+
+Before turning to the story of the famous Castalian Knecht, the chronicler returns to the distant past—the prehistory and history of the emergence of Castalia. Supposedly from the standpoint of the distant future, the novel offers a devastating critique of twentieth-century society and its degenerating culture, a critique of an era that the Castalian historian calls "feuilletonistic"12 (from the German meaning of the term "feuilleton," which denotes "a newspaper article of an entertaining nature"). It must be said that these pages of Hesse have not in the least lost their topicality even today; to use more modern terms, the critique of feuilletolism is a critique of the so-called "mass culture" of the bourgeois world.
+
     </p>
     <div class="hint">This text is also suitable for a stroll. Try hovering your mouse over the spider.</div>
     <script src="spider-demo.js"></script>
