@@ -1,5 +1,7 @@
 # Knecht Desktop
-![Knecht Demo](demo1.gif)
+<p align="center">
+  <img src="demo1.gif" alt="Knecht Demo" width="300" />
+</p>
 
 An interactive desktop spider companion built with Electron that scans your screen for text and physically walks across individual letters using procedural inverse kinematics.
 
@@ -55,5 +57,6 @@ An interactive desktop spider companion built with Electron that scans your scre
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
 
 
